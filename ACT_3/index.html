@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="description" content="Currículum de un profesional en todo">
+    <title>Currículum semántico con css</title>
+   <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <header>
+       <div>
+        <div>
+            <h1>Álvaro Bàguena Fernández</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#Educación">Educación</a></li>
+                <li><a href="#Habilidad">Habilidad</a></li>
+            </ul>
+         </nav>
+        </div>  
+         <div id="foto">
+            <img src="IMG/foto1.jpg" alt="Foto de pequeño">
+        </div>
+    </header> 
+        <main>
+            <article id="sobremi">
+                <h3>Sobre mí</h3>
+                <p>Soy un profesional creativo vinculado al diseño gráfico, la educación y la fotografía, con experiencia en contextos educativos, deportivos y de eventos sociales. Combino una sólida base visual con habilidades organizativas y de trabajo en equipo, que he desarrollado tanto en campamentos como en servicios de cátering y coordinación de material. </p>
+                <p>Disfruto especialmente de traducir ideas complejas en soluciones visuales claras y accesibles, integrando recursos gráficos, fotografía y narrativa visual para diferentes públicos. Además, mantengo una actitud de aprendizaje constante, explorando nuevas herramientas, lenguajes visuales y metodologías pedagógicas para enriquecer mi práctica profesional.</p>
+            </article>
+            <div  class="flexbox">
+            <section>
+                <article id="Experiencia">
+                    <h3>Experiencia</h3>
+                </article>
+                <article>
+                    <h4>Campamento</h4>
+                    <p> <em>Responsable de material</em> en el campamento de Orea, encargado de la gestión, mantenimiento y organización del equipamiento técnico y logístico. Además, participé activamente en el consejo de organización, colaborando en la planificación de actividades, la coordinación del equipo de monitores y la resolución de necesidades operativas durante el desarrollo del campamento.</p>
+                </article>
+                <article>
+                    <h4>Cátering</h4>
+                    <p><em>Camarero</em> en bodas y eventos gestionados por la empresa Salsia, especializado en atención al cliente, montaje de salas y servicio de banquetes. Mi labor consistió en garantizar una experiencia cuidada para los invitados, trabajando en equipo en entornos de alto ritmo y exigencia profesional.</p>
+                </article>
+                <article>
+                    <h4>Fotografía</h4>
+                    <p><em>Fotógrafo</em> oficial del Paterna CF y de distintos eventos sociales y deportivos. Encargado de capturar y editar imágenes para su uso en redes sociales, medios locales y materiales promocionales. Mi trabajo combina la técnica fotográfica deportiva con la mirada creativa propia del ámbito del diseño y la comunicación visual.</p>
+                </article>
+            </section>
+            <section>
+                <article id="Educación">
+                    <h3>Educación</h3>
+                </article>
+                <article>
+                    <div class="fecha">
+                    <h4>Bachiller</h4>
+                    <h4><strong>2022 - 2024</strong></h4>
+                    </div>
+                    <p>Cursado en <em>Escolapios, San José de Calasanz</em></p>
+                </article>
+                 <article>
+                    <div class="fecha">
+                    <h4>Grado universitario</h4>
+                    <h4><strong>2024 - actualidad</strong></p></h4>
+                    </div>
+                    <p>Universidad Europea de València</p>
+                    <p>Grado en <em>Diseño Gráfico y Tecnologías Creativas</em></p>
+                </article>
+            </section>
+            <section>
+                <article id="Habilidad">
+                    <h3>Habilidades</h3>
+                </article>
+                <article>
+                    <div class="fecha">
+                    <h4>Invisibilidad</h4>
+                    <h4><strong>2018 - 2020</strong></h4>
+                    </div>
+                    <p>Durante este periodo perfeccioné la habilidad de hacerme invisible, logrando desaparecer en múltiples ocasiones (tanto literal como metafóricamente). La práctica combinaba concentración, sigilo y cierta dosis de magia cotidiana. Sin embargo, tras la llegada del COVID, la habilidad pareció desvanecerse, quizá por exceso de videollamadas o por cambios en el equilibrio energético del universo.</p>
+                </article>
+                 <article>
+                     <div class="fecha"> 
+                        <h4>Telekinesis</h4>
+                    <h4><strong>2020 - actualidad</strong></h4>
+                     </div>
+                    
+                    <p>Actualmente continúo mi formación en la prestigiosa Universidad de Hogwarts, dentro de la especialidad de Manipulación Mental y Movimiento a Distancia. Mis avances en telekinesis son confidenciales, aunque los resultados comienzan a ser sorprendentes. El tema sigue siendo secreto… por ahora.</p>
+                </article>
+            </section>
+            </div>
+             
+        <form action="procesar.php" method="post" autocomplete="on">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="formName" placeholder="Nombre y apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu mail" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Teléfono de empresa</label>
+                <input type="tel" id="phone" name="phone" placeholder="+34...">
+            </div>
+            <div class="form-group">
+                <label for="tipo_entrevista">Tipo de entrevista</label>
+                <select name="tipo_entrevista" id="tipo_entrevista" required>
+                    <option value="">Selecciona opción</option>
+                    <option value="Entrevista Presencial">Entrevista Presencial</option>
+                    <option value="Entrevista Online ">Entrevista Online</option>
+                    <option value="Llamada telefónica">Llamada telefónica</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha sugerida</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            <div class="form-group">
+                <label for="urgencia">Nivel de urgencia (1-5)</label>
+                <input type="range" id="urgencia" name="urgencia" min="1" max="5">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje adicional</label>
+                <textarea name="mensaje" id="mensaje"> Escribe aquí</textarea>
+            </div>
+        
+            <div class="form-group">
+                <button type="submit">Enviar form</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+        </main>
+
+</body>
+</html>
